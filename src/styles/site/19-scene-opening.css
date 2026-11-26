@@ -1,0 +1,68 @@
+/* Template part "scene:opening" from index.html (8bsite/architecture-website-template @7ec5c2f), copied verbatim. */
+@layer scenes {
+  @media (prefers-reduced-motion: no-preference) {
+    [data-8b-live] #opening .op__hold { height: 70svh; }
+  }
+}
+@layer scenes {
+[data-8b-live] #opening { view-timeline: --opening-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #opening .op__stage > div:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6), :nth-of-type(7)), [data-8b-live] #opening .op__slab--gap, [data-8b-live] #opening .op__floor { animation-timeline: --opening-t1; animation-fill-mode: both; }
+[data-8b-live] #opening .op__stage > div:nth-of-type(2) { animation-range: cover calc(3% + 94vh) cover calc(33% + 34vh); animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #opening .op__stage > div:nth-of-type(3) { animation-range: cover calc(5.2% + 89.6vh) cover calc(35.2% + 29.6vh); animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #opening .op__stage > div:nth-of-type(4) { animation-range: cover calc(7.4% + 85.2vh) cover calc(37.4% + 25.2vh); animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #opening .op__stage > div:nth-of-type(5) { animation-range: cover calc(9.6% + 80.8vh) cover calc(39.6% + 20.8vh); animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #opening .op__stage > div:nth-of-type(6) { animation-range: cover calc(11.8% + 76.4vh) cover calc(41.8% + 16.4vh); animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #opening .op__stage > div:nth-of-type(7) { animation-range: cover calc(14% + 72vh) cover calc(44% + 12vh); animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #opening .op__slab--gap { animation-range: cover calc(16% + 68vh) cover calc(42% + 16vh); animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1); }
+[data-8b-live] #opening .op__floor { animation-range: cover calc(56% - 12vh) cover calc(100% - 100vh); animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); }
+@property --opening-p { syntax: '<number>'; inherits: false; initial-value: 0; }
+@keyframes opening-p { from { --opening-p: 0; } to { --opening-p: 1; } }
+@keyframes opening-lift { from { translate: 0 0; } to { translate: 0 calc(var(--opening-lift) * -1vh); } }
+[data-8b-live] #opening .op__copy > .op__block { animation-name: op-step, opening-lift; animation-duration: .8s, auto; animation-delay: 0s, 0s; animation-iteration-count: 1; animation-direction: normal; animation-timing-function: cubic-bezier(.2, .7, .2, 1), cubic-bezier(0.3333, 0, 0.6667, 0.3333); animation-fill-mode: backwards, both; animation-timeline: auto, --opening-t1; animation-range: normal, cover 100vh cover calc(40% + 20vh); }
+[data-8b-live] #opening .op__block--a { --opening-lift: 26; }
+[data-8b-live] #opening .op__block--b { --opening-lift: 17; animation-delay: .1s, 0s; }
+[data-8b-live] #opening .op__block--c { --opening-lift: 8; animation-delay: .2s, 0s; }
+[data-8b-live] #opening .op__slab:not(.op__slab--gap) .op__img { animation-name: op-drift, opening-p; animation-duration: var(--dur, 8s), auto; animation-iteration-count: infinite, 1; animation-direction: alternate, normal; animation-timing-function: ease-in-out, linear; animation-fill-mode: none, both; animation-timeline: auto, --opening-t1; transform: none; scale: calc(64 - 63 * (8 * pow(min(var(--opening-p), .5), 4) + .5 - 8 * pow(1 - max(var(--opening-p), .5), 4))) 1; }
+[data-8b-live] #opening .op__slab:nth-of-type(2) .op__img { animation-range: normal, cover calc(9% + 82vh) cover calc(39% + 22vh); }
+[data-8b-live] #opening .op__slab:nth-of-type(3) .op__img { animation-range: normal, cover calc(10.8% + 78.4vh) cover calc(40.8% + 18.4vh); }
+[data-8b-live] #opening .op__slab:nth-of-type(4) .op__img { animation-range: normal, cover calc(12.6% + 74.8vh) cover calc(42.6% + 14.8vh); }
+[data-8b-live] #opening .op__slab:nth-of-type(5) .op__img { animation-range: normal, cover calc(14.4% + 71.2vh) cover calc(44.4% + 11.2vh); }
+[data-8b-live] #opening .op__slab:nth-of-type(6) .op__img { animation-range: normal, cover calc(16.2% + 67.6vh) cover calc(46.2% + 7.6vh); }
+[data-8b-live] #opening .op__slab:nth-of-type(7) .op__img { animation-range: normal, cover calc(18% + 64vh) cover calc(48% + 4vh); }
+@keyframes opening-div-op-slab-clippath-d { 0% { clip-path: inset(13% 88.8% 16% 0%); } 100% { clip-path: inset(0% 88.8% 0% 0%); } }
+@keyframes opening-div-op-slab-clippath-m { 0% { clip-path: inset(10% 89.8% 30% 0%); } 100% { clip-path: inset(0% 89.8% 0% 0%); } }
+@keyframes opening-div-op-slab-clippath-2-d { 0% { clip-path: inset(20% 79.3% 26% 11%); } 100% { clip-path: inset(0% 79.3% 0% 11%); } }
+@keyframes opening-div-op-slab-clippath-2-m { 0% { clip-path: inset(19% 81.8% 26% 10%); } 100% { clip-path: inset(0% 81.8% 0% 10%); } }
+@keyframes opening-div-op-slab-clippath-3-d { 0% { clip-path: inset(41% 72.3% 21% 20.5%); } 100% { clip-path: inset(0% 72.3% 0% 20.5%); } }
+@keyframes opening-div-op-slab-clippath-3-m { 0% { clip-path: inset(29% 74.8% 34% 18%); } 100% { clip-path: inset(0% 74.8% 0% 18%); } }
+@keyframes opening-div-op-slab-clippath-4-d { 0% { clip-path: inset(31% 21.8% 29% 70%); } 100% { clip-path: inset(0% 21.8% 0% 70%); } }
+@keyframes opening-div-op-slab-clippath-4-m { 0% { clip-path: inset(23% 16.8% 28% 75%); } 100% { clip-path: inset(0% 16.8% 0% 75%); } }
+@keyframes opening-div-op-slab-clippath-5-d { 0% { clip-path: inset(11% 9.8% 22% 78%); } 100% { clip-path: inset(0% 9.8% 0% 78%); } }
+@keyframes opening-div-op-slab-clippath-5-m { 0% { clip-path: inset(13% 8.8% 22% 83%); } 100% { clip-path: inset(0% 8.8% 0% 83%); } }
+@keyframes opening-div-op-slab-clippath-6-d { 0% { clip-path: inset(0% -0.2% 16% 90%); } 100% { clip-path: inset(0% -0.2% 0% 90%); } }
+@keyframes opening-div-op-slab-clippath-6-m { 0% { clip-path: inset(8% -0.2% 18% 91%); } 100% { clip-path: inset(0% -0.2% 0% 91%); } }
+@keyframes opening-div-op-slab-clippath-7-d { 0% { clip-path: inset(0% 51.25% 0% 48.75%); } 100% { clip-path: inset(0% 30% 0% 27.5%); } }
+@keyframes opening-div-op-slab-clippath-7-m { 0% { clip-path: inset(0% 50%); } 100% { clip-path: inset(0% 25%); } }
+@keyframes opening-div-op-floor-clippath-d { 0% { clip-path: inset(84% 0% 0%); } 100% { clip-path: inset(0%); } }
+@keyframes opening-div-op-floor-clippath-m { 0% { clip-path: inset(88% 0% 0%); } 100% { clip-path: inset(0%); } }
+@media (min-width: 901px) {
+  [data-8b-live] #opening .op__stage > div:nth-of-type(2) { animation-name: opening-div-op-slab-clippath-d; }
+  [data-8b-live] #opening .op__stage > div:nth-of-type(3) { animation-name: opening-div-op-slab-clippath-2-d; }
+  [data-8b-live] #opening .op__stage > div:nth-of-type(4) { animation-name: opening-div-op-slab-clippath-3-d; }
+  [data-8b-live] #opening .op__stage > div:nth-of-type(5) { animation-name: opening-div-op-slab-clippath-4-d; }
+  [data-8b-live] #opening .op__stage > div:nth-of-type(6) { animation-name: opening-div-op-slab-clippath-5-d; }
+  [data-8b-live] #opening .op__stage > div:nth-of-type(7) { animation-name: opening-div-op-slab-clippath-6-d; }
+  [data-8b-live] #opening .op__slab--gap { animation-name: opening-div-op-slab-clippath-7-d; }
+  [data-8b-live] #opening .op__floor { animation-name: opening-div-op-floor-clippath-d; }
+}
+@media (max-width: 900px) {
+  [data-8b-live] #opening .op__stage > div:nth-of-type(2) { animation-name: opening-div-op-slab-clippath-m; }
+  [data-8b-live] #opening .op__stage > div:nth-of-type(3) { animation-name: opening-div-op-slab-clippath-2-m; }
+  [data-8b-live] #opening .op__stage > div:nth-of-type(4) { animation-name: opening-div-op-slab-clippath-3-m; }
+  [data-8b-live] #opening .op__stage > div:nth-of-type(5) { animation-name: opening-div-op-slab-clippath-4-m; }
+  [data-8b-live] #opening .op__stage > div:nth-of-type(6) { animation-name: opening-div-op-slab-clippath-5-m; }
+  [data-8b-live] #opening .op__stage > div:nth-of-type(7) { animation-name: opening-div-op-slab-clippath-6-m; }
+  [data-8b-live] #opening .op__slab--gap { animation-name: opening-div-op-slab-clippath-7-m; }
+  [data-8b-live] #opening .op__floor { animation-name: opening-div-op-floor-clippath-m; }
+}
+}

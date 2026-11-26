@@ -1,0 +1,21 @@
+/* Template part "tokens" from index.html (8bsite/architecture-website-template @7ec5c2f), copied verbatim except the 12 colour values, replaced with the Daylong palette (brand-profile 配色角色; variable roles unchanged). */
+@layer tokens {
+:root {
+  --color-1: #ece6da;
+  --color-2: #141c26;
+  --color-3: #f6f2ea;
+  --color-4: #c2552b;
+  --color-5: #f0b45e;
+  --color-6: #3e6a73;
+  --color-7: #2c3f8f;
+  --color-8: #e0342c;
+  --color-9: #ffffff;
+  --color-10: #4c5664;
+  --color-11: #b9c6da;
+  --color-12: #e8dcd2;
+  --font-1: "Mozilla Headline", "Mozilla Headline Fallback", "Arial Narrow", Arial, sans-serif;
+  --font-2: "Mozilla Text", "Mozilla Text Fallback", Arial, sans-serif;
+  --space-1: clamp(20px, 4vw, 64px);
+  --space-2: clamp(72px, 11vw, 160px);
+}
+}

@@ -1,0 +1,31 @@
+/* Template part "section:scan" from index.html (8bsite/architecture-website-template @7ec5c2f), copied verbatim. */
+@layer sections {
+  #scan { background: var(--color-2); color: var(--color-9); padding: var(--space-2) var(--space-1); }
+  #scan .sc__grid { display: grid; grid-template-columns: minmax(0, 34fr) minmax(0, 66fr); grid-template-areas: "head stage" "steps stage"; column-gap: 4vw; max-width: 1440px; margin: 0 auto; }
+  #scan .sc__head { grid-area: head; display: grid; gap: 22px; align-content: start; padding-bottom: 10svh; }
+  #scan .sc__head .m-text-5 { color: var(--color-1); }
+  #scan .sc__stage { grid-area: stage; }
+  #scan .sc__frame { position: sticky; top: 12svh; height: 76svh; }
+  #scan .sc__photo, #scan .sc__smear { position: absolute; inset: 0 0 46px 0; }
+  #scan .sc__photo .m-photo__img { object-position: 50% 40%; }
+  #scan .sc__smear { overflow: hidden; clip-path: inset(0% 100% 0% 0%); }
+  #scan .sc__smear img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; transform-origin: 0% 50%; transform: scaleX(24); }
+  #scan .sc__line { position: absolute; top: -12px; bottom: 34px; left: 0; width: 3px; margin-left: -1px; background: var(--color-8); }
+  #scan .sc__axis { position: absolute; left: 0; right: 0; bottom: 0; height: 34px; border-top: 2px solid var(--color-1); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  #scan .sc__tick { padding-top: 9px; color: var(--color-1); }
+  #scan .sc__tick[data-lit] { color: var(--color-5); }
+  #scan .sc__steps { grid-area: steps; display: grid; }
+  #scan .sc__step { min-height: 40svh; padding: 20px 0 32px 24px; border-left: 3px solid var(--color-10); display: grid; gap: 10px; align-content: start; }
+  #scan .sc__step[data-lit] { border-left-color: var(--color-5); }
+  #scan .sc__time { color: var(--color-5); }
+  #scan .sc__step p:last-child { max-width: 38ch; }
+  @media (max-width: 900px) {
+    #scan .sc__grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "stage" "steps"; }
+    #scan .sc__head { padding-bottom: 32px; }
+    #scan .sc__stage { position: sticky; top: 0; z-index: 2; background: var(--color-2); padding: 10px 0 14px; }
+    #scan .sc__frame { position: relative; top: 0; height: 38svh; }
+    #scan .sc__photo, #scan .sc__smear { bottom: 40px; }
+    #scan .sc__tick { font-size: 11px; }
+    #scan .sc__step { min-height: 34svh; padding-top: 24px; }
+  }
+}

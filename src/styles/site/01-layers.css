@@ -1,0 +1,2 @@
+/* Template part "layers" from index.html (8bsite/architecture-website-template @7ec5c2f), copied verbatim except: layer "base" renamed "site-base" (Tailwind PostCSS reserves it); font URLs self-hosted. */
+@layer tokens, site-base, atoms, layout, sections, scenes, brand;

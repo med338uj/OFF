@@ -1,0 +1,33 @@
+/* Template part "section:floors" from index.html (8bsite/architecture-website-template @7ec5c2f), copied verbatim. */
+@layer sections {
+  #floors { background: var(--color-2); color: var(--color-9); padding: var(--space-2) var(--space-1); }
+  #floors .fl__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); grid-template-areas: "stage head" "stage list"; column-gap: 6vw; max-width: 1300px; margin: 0 auto; }
+  #floors .fl__head { grid-area: head; display: grid; gap: 22px; padding-bottom: 8svh; }
+  #floors .fl__head .m-text-5 { color: var(--color-1); }
+  #floors .fl__stage { grid-area: stage; }
+  #floors .fl__frame { position: sticky; top: 11svh; height: 78svh; max-width: 100%; aspect-ratio: .56; margin: 0 auto; }
+  #floors .fl__slice { position: absolute; inset: 0; clip-path: inset(calc(var(--a) * 1%) 0% calc((100 - var(--z)) * 1%) 0%); }
+  #floors .fl__slice img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 46% 62%; }
+  #floors .fl__slice:nth-child(1) { --a: 0;  --z: 22; }
+  #floors .fl__slice:nth-child(2) { --a: 22; --z: 34; }
+  #floors .fl__slice:nth-child(3) { --a: 34; --z: 46; }
+  #floors .fl__slice:nth-child(4) { --a: 46; --z: 58; }
+  #floors .fl__slice:nth-child(5) { --a: 58; --z: 70; }
+  #floors .fl__slice:nth-child(6) { --a: 70; --z: 82; }
+  #floors .fl__slice:nth-child(7) { --a: 82; --z: 100; }
+  #floors .fl__list { grid-area: list; display: grid; }
+  #floors .fl__floor { min-height: 30svh; display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 8px 24px; align-content: start; padding: 22px 0 36px; border-top: 3px solid var(--color-10); }
+  #floors .fl__floor[data-active] { border-top-color: var(--color-5); }
+  #floors .fl__level { color: var(--color-5); padding-top: 8px; }
+  #floors .fl__level { grid-column: 1; grid-row: 1 / span 2; }
+  #floors .fl__floor h3, #floors .fl__floor p:last-child { grid-column: 2; }
+  #floors .fl__floor p:last-child { max-width: 44ch; }
+  @media (max-width: 900px) {
+    #floors .fl__grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "stage" "list"; }
+    #floors .fl__head { padding-bottom: 28px; }
+    #floors .fl__stage { position: sticky; top: 0; z-index: 2; background: var(--color-2); padding: 10px 0 14px; }
+    #floors .fl__frame { position: relative; top: 0; height: 44svh; }
+    #floors .fl__floor { grid-template-columns: minmax(0, 1fr); min-height: 30svh; }
+    #floors .fl__level, #floors .fl__floor h3, #floors .fl__floor p:last-child { grid-column: 1; grid-row: auto; }
+  }
+}

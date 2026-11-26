@@ -1,0 +1,18 @@
+/* OFF MAPS brand layer (originally the Daylong Architects brand layer; palette lives in the
+   template tokens, 02-tokens.css). The nav wordmark is now the official OFF MAPS logo image
+   (src/components/site/Wordmark.tsx), so the three-bar rules below no longer match an element
+   and are kept only so the template CSS stays verbatim. */
+@layer brand {
+  /* Logo: three bars for one day of the scan: first light (full), dusk (62%), midnight (full). */
+  #navigation .nav__mark span:nth-child(1) { background: var(--color-5); }
+  #navigation .nav__mark span:nth-child(2) { background: var(--color-4); }
+  #navigation .nav__mark span:nth-child(3) { background: var(--color-2); }
+  /* Disabled (no disabled control on the page today): 40% opacity, same size, border and text. */
+  :is(.m-btn, .m-btn-2, .m-btn-3, .m-icon-btn, .m-field__input):is(:disabled, [aria-disabled="true"]) { opacity: .4; cursor: not-allowed; }
+  @media (hover: hover) {
+    :is(.m-btn, .m-btn-2, .m-btn-3):is(:disabled, [aria-disabled="true"]):hover::before { transform: scaleX(0); }
+  }
+  /* Enquiry status: First light ground, Midnight bold text in both states; the incomplete state
+     also gets a Midnight left rule, so the two states differ by shape as well as by wording. */
+  #contact .ct__status[data-state="error"] { border-left: 6px solid var(--color-2); }
+}

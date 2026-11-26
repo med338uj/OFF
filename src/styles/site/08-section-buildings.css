@@ -1,0 +1,22 @@
+/* Template part "section:buildings" from index.html (8bsite/architecture-website-template @7ec5c2f), copied verbatim. */
+@layer sections {
+  #buildings { position: relative; background: var(--color-1); padding: var(--space-2) 0 calc(var(--space-2) * .6); }
+  #buildings .bl__pin { position: relative; }
+  #buildings .bl__track { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 56px 2.6vw; padding: 0 var(--space-1); }
+  #buildings .bl__item { flex: none; width: calc(var(--plot) * 4.6vw); }
+  #buildings .bl__item--head { width: max(300px, 30vw); display: grid; gap: 22px; align-content: end; }
+  #buildings .bl__item--end { width: max(260px, 22vw); display: grid; gap: 18px; align-content: end; }
+  #buildings .bl__photo { position: relative; overflow: hidden; height: calc(var(--h) * 1svh); background: var(--color-12); }
+  #buildings .bl__shift { position: absolute; inset: 0 -8%; }
+  #buildings .bl__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  #buildings .bl__plate { height: 200px; padding-top: 16px; display: grid; gap: 6px; align-content: start; border-top: 4px solid var(--color-2); }
+  #buildings .bl__plate .m-text-4 { color: var(--color-10); }
+  #buildings .bl__plate p:last-child { font-size: 15px; line-height: 1.45; max-width: 36ch; }
+  #buildings .bl__pavement { height: 18px; margin-top: 40px; background: linear-gradient(to bottom, var(--color-2) 0 34%, var(--color-5) 34% 67%, var(--color-6) 67% 100%); }
+  @media (max-width: 900px) {
+    #buildings .bl__item { width: min(84vw, calc(var(--plot) * 10vw)); }
+    #buildings .bl__item--head, #buildings .bl__item--end { width: 84vw; }
+    #buildings .bl__photo { height: calc(var(--h) * .9svh); }
+    #buildings .bl__plate { height: 214px; }
+  }
+}

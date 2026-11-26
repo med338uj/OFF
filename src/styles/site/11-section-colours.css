@@ -1,0 +1,20 @@
+/* Template part "section:colours" from index.html (8bsite/architecture-website-template @7ec5c2f), copied verbatim. */
+@layer sections {
+  #colours { background: var(--color-1); }
+  #colours .co__head { padding: var(--space-2) var(--space-1) 56px; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 24px 6vw; align-items: end; max-width: 1440px; margin: 0 auto; }
+  #colours .co__band { position: relative; min-height: max(120px, 15svh); display: grid; align-items: center; }
+  #colours .co__fill { position: absolute; inset: 0; transform-origin: 50% 0; background: var(--co-band); }
+  #colours .co__label { position: relative; display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 5fr) minmax(0, 2fr); gap: 12px 3vw; align-items: baseline; padding: 26px var(--space-1); max-width: 1440px; width: 100%; margin: 0 auto; }
+  #colours .co__label p { max-width: 50ch; }
+  #colours .co__band--sand { --co-band: var(--color-5); color: var(--color-2); }
+  #colours .co__band--brick { --co-band: var(--color-4); color: var(--color-9); }
+  #colours .co__band--door { --co-band: var(--color-6); color: var(--color-9); }
+  #colours .co__band--plaster { --co-band: var(--color-12); color: var(--color-2); }
+  #colours .co__band--tram { --co-band: var(--color-7); color: var(--color-9); }
+  #colours .co__band--night { --co-band: var(--color-2); color: var(--color-9); }
+  #colours .co__band--night .co__fill { border-top: 6px solid var(--color-8); }
+  @media (max-width: 900px) {
+    #colours .co__head { grid-template-columns: minmax(0, 1fr); }
+    #colours .co__label { grid-template-columns: minmax(0, 1fr); padding-block: 22px; }
+  }
+}

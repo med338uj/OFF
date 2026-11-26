@@ -1,0 +1,5 @@
+/* In-app 404 (not part of the template); uses the template's tokens and atoms. */
+@layer sections {
+  .not-found { display: grid; align-content: center; justify-items: start; gap: 1.5rem; min-height: 100svh; padding: var(--space-1); }
+  .not-found .m-text { max-width: 34em; }
+}

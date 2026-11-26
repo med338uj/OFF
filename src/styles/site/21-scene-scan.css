@@ -1,0 +1,14 @@
+/* Template part "scene:scan" from index.html (8bsite/architecture-website-template @7ec5c2f), copied verbatim. */
+@layer scenes {
+[data-8b-live] #scan { timeline-scope: --scan-t1; }
+[data-8b-live] #scan .sc__steps { view-timeline: --scan-t1 block; view-timeline-inset: 0; }
+[data-8b-live] #scan .sc__line, [data-8b-live] #scan .sc__smear, [data-8b-live] #scan .sc__smear > img { animation-timeline: --scan-t1; animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #scan .sc__line { animation-name: scan-line; animation-range: cover 30vh cover calc(80% - 38vh); transform: none; }
+[data-8b-live] #scan .sc__smear { animation-name: scan-div-sc-smear-clippath; animation-range: cover 30vh cover calc(80% - 38vh); }
+[data-8b-live] #scan .sc__smear > img { animation-name: scan-p, scan-div-sc-smear-img-transform-origin; scale: calc(24 - 23 * (4 * pow(min(var(--scan-p), .5), 3) + .5 - 4 * pow(1 - max(var(--scan-p), .5), 3))) 1; animation-range: cover calc(80% - 38vh) cover calc(100% - 55vh), cover 30vh cover calc(100% - 55vh); transform: none; transform-origin: 100% 50%; }
+@property --scan-p { syntax: '<number>'; inherits: false; initial-value: 0; }
+@keyframes scan-p { from { --scan-p: 0; } to { --scan-p: 1; } }
+@keyframes scan-line { from { translate: 0 0; } to { translate: var(--scan-frame-w, 0px) 0; } }
+@keyframes scan-div-sc-smear-clippath { 0% { clip-path: inset(0% 100% 0% 0%); } 99.998% { clip-path: inset(0% 0.0125% 0% 0%); } 100% { clip-path: inset(0%); } }
+@keyframes scan-div-sc-smear-img-transform-origin { 0% { transform-origin: 0% 50%; } 0.8333% { transform-origin: 100% 50%; } 100% { transform-origin: 100% 50%; } }
+}
