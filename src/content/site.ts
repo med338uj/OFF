@@ -25,9 +25,9 @@ const address = ['The OFF MAPS desk', 'Marrakech, Morocco'];
 
 export const site = {
   meta: {
-    title: 'OFF MAPS — mystery travel across Morocco · You pick the vibe, we pick the place',
+    title: 'Mohamed Bakkouri',
   },
-  brand: { name: 'OFF MAPS', home: '#opening', footerLen: 8 },
+  brand: { name: 'Mohamed Bakkouri', home: '#opening', footerLen: 8 },
   notFound: {
     title: 'This page missed the departure',
     text: 'We walked the whole route and found nothing at this address. The universes, the departures and the booking form are all on the first page.',
