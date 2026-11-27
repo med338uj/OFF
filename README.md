@@ -31,6 +31,7 @@ Données provisoires à remplacer par les vraies : l'email `hello@offmaps.travel
 - Le logo officiel n'a pas été fourni : la marque est écrite en texte (`OFFmaps`) avec le pictogramme en barres du template.
 - `og:image` pointe vers `/og-image.png` : le remplacer par l'adresse complète (`https://votre-domaine/og-image.png`) une fois le domaine connu.
 - Aperçu en ligne : https://offmaps-ashy.vercel.app (projet Vercel `offmaps`, équipe Branchup digital). Pour le mettre à jour : `npx vercel deploy --prod` depuis ce dossier.
+- Sur Vercel (ou tout hébergeur qui attend un build) : `npm run build` régénère les pages et copie le site dans `dist/`. Aucune dépendance à installer.
 - Mettre en ligne le dossier tel quel sur n'importe quel hébergeur statique (Vercel, Netlify, GitHub Pages…). `tools/`, `content/` et les fichiers `.md` ne sont pas nécessaires en ligne.
 
 ## Licences
