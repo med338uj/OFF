@@ -1,4 +1,0 @@
-/* Template part "layout" from index.html (8bsite/architecture-website-template @7ec5c2f), copied verbatim. */
-@layer layout {
-  .wrap { width: min(100% - 2 * var(--space-1), 1360px); margin-inline: auto; }
-}
