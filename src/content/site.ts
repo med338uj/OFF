@@ -25,7 +25,7 @@ const address = ['The OFF MAPS desk', 'Marrakech, Morocco'];
 
 export const site = {
   meta: {
-    title: 'OFF MAPS — mystery travel across Morocco · You pick the vibe, we pick the place',
+    title: 'OFF MAPS — mystery travel across Morocco · We SEE your VISION',
   },
   brand: { name: 'OFF MAPS', home: '#opening', footerLen: 8 },
   notFound: {
@@ -44,7 +44,7 @@ export const site = {
   opening: {
     stageLabel: 'Warm Moroccan landscapes — ridges, dunes and ocean — smeared into vertical slabs of colour',
     photo: openingStage,
-    title: 'You pick the vibe. We pick the place.',
+    title: 'We SEE your VISION',
     lead: 'OFF MAPS sells mystery travel tickets across Morocco. Choose one of three universes — Atlas, Sahara or Coast — and we turn it into a sealed ticket: the place, the departure, the stay and every day in between.',
     primary: { label: 'Choose your universe', href: '#buildings' },
     secondary: { label: 'Book your ticket', href: '#contact' },
